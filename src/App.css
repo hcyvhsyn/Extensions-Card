@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url('./public/assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf') format("truetype-variations");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+
+@layer utilities {
+  .preset-1 {
+    font-family: "Noto Sans", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 2.125rem;
+    line-height: 100%;
+    letter-spacing: -1px;
+  }
+
+  .preset-2 {
+    font-family: "Noto Sans", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+  }
+
+  .preset-3 {
+    font-family: "Noto Sans", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.3px;
+  }
+
+  .preset-4 {
+    font-family: "Noto Sans", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.3px;
+  }
+
+  .preset-5 {
+    font-family: "Noto Sans", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+  }
+
+  .preset-6 {
+    font-family: "Noto Sans", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+  }
+}
